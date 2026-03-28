@@ -1,80 +1,137 @@
-/* GENERAL STYLING */
+/* --------------------- Reset & Basic --------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
-    margin: 0;
-    padding: 0 20px;
+  background-color: #f0f8ff; /* light blue background for friendly look */
+  color: #333;
+  line-height: 1.6;
 }
 
-h1, h2 {
-    text-align: center;
-    color: #222;
+/* --------------------- Header --------------------- */
+header {
+  background-color: #4caf50; /* green */
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-li {
-    margin: 10px 0;
-    font-size: 18px;
+header p {
+  font-size: 1.1rem;
 }
 
-/* BUTTONS */
+/* --------------------- Section Titles --------------------- */
+h2 {
+  color: #2e7d32; /* darker green */
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* --------------------- Preview Section --------------------- */
+.preview ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.preview li {
+  background-color: #e8f5e9; /* light green */
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* --------------------- Grades & Subjects --------------------- */
+.grade-section {
+  margin: 20px auto;
+  max-width: 900px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.grade-section ul {
+  list-style-type: none;
+}
+
+.grade-section li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f1f8e9; /* subtle green */
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.grade-section li:hover {
+  background-color: #dcedc8; /* slightly darker on hover */
+}
+
+/* --------------------- Buttons --------------------- */
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px 5px 5px 0;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: transform 0.2s, opacity 0.3s;
+  text-decoration: none;
+  color: white;
+  background-color: #4caf50;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+  font-weight: bold;
 }
 
-/* Hover effect */
 .button:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
+  background-color: #388e3c;
 }
 
-/* COLORS PER SUBJECT */
-.button-math { background-color: #FF5733; }       /* Orange-Red */
-.button-english { background-color: #33A1FF; }    /* Blue */
-.button-kiswahili { background-color: #33FF57; }  /* Green */
-.button-science { background-color: #FF33A8; }    /* Pink */
-.button-social { background-color: #FFB733; }     /* Yellow-Orange */
-.button-religious { background-color: #8D33FF; }  /* Purple */
-.button-creative { background-color: #33FFF0; }   /* Aqua */
-.button-homescience { background-color: #FF8C33; }/* Dark Orange */
-.button-ict { background-color: #3380FF; }        /* Deep Blue */
-.button-lifeskills { background-color: #33FF8C; } /* Light Green */
-.button-bundle { background-color: #FF3333; }     /* Bright Red */
-
-/* LINKS AND FOOTER */
-a {
-    text-decoration: none;
+/* --------------------- Payment Info --------------------- */
+.payment-info {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #fff3e0; /* soft orange */
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.payment-info ol {
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+/* --------------------- Footer --------------------- */
 footer {
-    text-align: center;
-    padding: 20px 0;
-    color: #555;
-    font-size: 14px;
-    margin-top: 40px;
-    border-top: 1px solid #ccc;
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
-    body {
-        padding: 0 10px;
-    }
-    .button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
+/* --------------------- Responsive --------------------- */
+@media (max-width: 768px) {
+  .preview ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grade-section li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
