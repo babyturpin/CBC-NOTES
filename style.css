@@ -1,0 +1,95 @@
+/* General Reset & Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #0b3d91;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #0b3d91;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: #0b3d91; /* Dark Blue */
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin: 5px 5px 15px 0;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1454c3;
+  transform: translateY(-2px);
+}
+
+/* Links */
+a {
+  color: #0b3d91;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 2px solid #0b3d91;
+  color: #0b3d91;
+  font-size: 0.9em;
+}
+
+/* Subject Sections */
+h2 + p {
+  margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+  }
+}
