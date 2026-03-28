@@ -1,107 +1,80 @@
-/* General Reset & Body */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* GENERAL STYLING */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f7fa;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0 20px;
 }
 
-/* Headings */
-h1 {
-  text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #0b3d91;
-}
-
-h2 {
-  font-size: 1.8em;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: #0b3d91;
-}
-
-/* Paragraphs */
-p {
-  margin-bottom: 15px;
-  font-size: 1.1em;
-}
-
-/* Buttons */
-.button {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  margin: 5px 5px 15px 0;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-/* Colorful Subject Buttons */
-.button:nth-of-type(1) { background-color: #e74c3c; }  /* Red - Mathematics */
-.button:nth-of-type(2) { background-color: #3498db; }  /* Blue - English */
-.button:nth-of-type(3) { background-color: #2ecc71; }  /* Green - Kiswahili */
-.button:nth-of-type(4) { background-color: #f1c40f; color:#000; }  /* Yellow - Science */
-.button:nth-of-type(5) { background-color: #9b59b6; }  /* Purple - Social Studies */
-.button:nth-of-type(6) { background-color: #e67e22; }  /* Orange - Religious Studies */
-.button:nth-of-type(7) { background-color: #1abc9c; }  /* Teal - Creative Arts */
-.button:nth-of-type(8) { background-color: #34495e; }  /* Dark Gray - Home Science */
-.button:nth-of-type(9) { background-color: #d35400; }  /* Deep Orange - Computers/ICT */
-.button:nth-of-type(10){ background-color: #c0392b; }  /* Dark Red - Life Skills */
-
-/* Hover Effect */
-.button:hover {
-  transform: translateY(-2px);
-  opacity: 0.85;
-}
-
-/* Links */
-a {
-  color: #0b3d91;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  margin-top: 40px;
-  padding: 20px 0;
-  text-align: center;
-  border-top: 2px solid #0b3d91;
-  color: #0b3d91;
-  font-size: 0.9em;
-}
-
-/* Subject Sections */
-h2 + p {
-  margin-left: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  .button {
-    width: 100%;
+h1, h2 {
     text-align: center;
-    padding: 14px 0;
-  }
+    color: #222;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* BUTTONS */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 5px 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.2s, opacity 0.3s;
+}
+
+/* Hover effect */
+.button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* COLORS PER SUBJECT */
+.button-math { background-color: #FF5733; }       /* Orange-Red */
+.button-english { background-color: #33A1FF; }    /* Blue */
+.button-kiswahili { background-color: #33FF57; }  /* Green */
+.button-science { background-color: #FF33A8; }    /* Pink */
+.button-social { background-color: #FFB733; }     /* Yellow-Orange */
+.button-religious { background-color: #8D33FF; }  /* Purple */
+.button-creative { background-color: #33FFF0; }   /* Aqua */
+.button-homescience { background-color: #FF8C33; }/* Dark Orange */
+.button-ict { background-color: #3380FF; }        /* Deep Blue */
+.button-lifeskills { background-color: #33FF8C; } /* Light Green */
+.button-bundle { background-color: #FF3333; }     /* Bright Red */
+
+/* LINKS AND FOOTER */
+a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #555;
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    body {
+        padding: 0 10px;
+    }
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
